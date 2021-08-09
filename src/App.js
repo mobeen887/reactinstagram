@@ -87,7 +87,8 @@ function App() {
       auth
       .createUserWithEmailAndPassword(email, password)
       .then((authUser) => {
-       return authUser.user.updateProfile({
+        window.location.reload();
+        return authUser.user.updateProfile({
           displayName: username
         })
       })

@@ -13,6 +13,7 @@ function ImageUpload({username}) {
     const [caption, setCaption] = useState('');
 
     const handleChange = (e) => {
+        window.location.reload();
         if (e.target.files[0]) {
             setImage(e.target.files[0]);
         }
